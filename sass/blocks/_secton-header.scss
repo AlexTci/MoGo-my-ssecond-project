@@ -1,0 +1,43 @@
+// Start section Header
+.section__header {
+  text-align: center;
+  padding-bottom: 101px;
+  width: 100%;
+  max-width: 954px;
+  margin: 0 auto;
+}
+.section__header-subtitle {
+  font-family: "Kaushan Script";
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #333333;
+  padding-bottom: 23px;
+}
+.section__header-title {
+  font-family: Montserrat;
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #333333;
+
+  &::after {
+    content: "";
+    display: block;
+    margin: 42px auto;
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+  }
+}
+.section__header-text {
+  font-family: Roboto;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #999999;
+}
+
+// End section Header
