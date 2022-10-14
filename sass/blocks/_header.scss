@@ -1,10 +1,12 @@
+// Start section Header
+
 .header {
   width: 100%;
   height: 117vh;
   background: url(./../img/header_bg.jpg) center no-repeat;
   background-size: cover;
 }
-
+// Start Logo and Nav
 .heder__top {
   display: flex;
   justify-content: space-between;
@@ -58,6 +60,10 @@
 .search__link {
   padding-left: 35px;
 }
+
+// End Logo and Nav
+
+// Start Main block header
 .header__text {
   position: relative;
   width: 100%;
@@ -110,7 +116,9 @@
     color: #fce38a;
   }
 }
+// End Main block header
 
+// Start Slider Header
 .header__slider {
   display: flex;
   justify-content: space-between;
@@ -152,3 +160,4 @@
     z-index: 2;
   }
 }
+// Start Slider Header
