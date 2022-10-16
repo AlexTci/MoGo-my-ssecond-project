@@ -1,0 +1,22 @@
+.devices {
+  padding: 80px 0 0 0;
+  background: url(./../img/devices/devices_bg.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.devices__elements {
+  position: relative;
+  width: 100%;
+  max-width: 535px;
+  margin: 0 auto;
+}
+.tablet {
+  display: block;
+}
+.phone {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  bottom: -90px;
+  right: -100px;
+}
