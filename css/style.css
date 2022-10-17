@@ -270,7 +270,12 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   color: #ffffff;
-  padding-bottom: 10px; }
+  padding-bottom: 10px;
+  opacity: 0; }
+
+.viz {
+  opacity: 1;
+  transition: 1s; }
 
 .progress__text {
   font-family: Montserrat;
@@ -334,3 +339,62 @@ body {
   z-index: 1;
   bottom: -90px;
   right: -100px; }
+
+.whatwedo {
+  margin-top: 80px; }
+
+.whatwedo__content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 92px;
+  margin-bottom: 120px; }
+
+.whatwedo__block {
+  max-width: 50%; }
+  .whatwedo__block:img {
+    padding-right: 30px; }
+
+.spoiler {
+  display: flex;
+  flex-direction: column; }
+
+.spoiler__item {
+  position: relative;
+  min-width: 100%;
+  max-height: 240px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #e5e5e5;
+  margin-bottom: 10px;
+  flex: 33%; }
+  .spoiler__item:last-child {
+    margin-bottom: 0px; }
+
+.spoler__title {
+  padding-left: 60px;
+  padding-top: 4%;
+  height: 60px;
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #333333;
+  border-bottom: 1px solid #e5e5e5; }
+
+.spoiler--icon {
+  position: absolute;
+  top: 15px;
+  left: 16px; }
+
+.spoiler__text {
+  display: none;
+  max-height: 132px;
+  margin-bottom: 28px;
+  padding: 21px 55px 0px 20px;
+  font-family: Roboto;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 300;
+  font-style: italic;
+  color: #999999;
+  overflow-y: scroll; }
