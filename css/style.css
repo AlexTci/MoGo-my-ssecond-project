@@ -360,16 +360,19 @@ body {
 
 .spoiler__item {
   position: relative;
-  min-width: 100%;
   max-height: 240px;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #fff;
   border: 1px solid #e5e5e5;
   margin-bottom: 10px;
   flex: 33%; }
-  .spoiler__item:last-child {
-    margin-bottom: 0px; }
+
+.spoiler--icon {
+  position: absolute;
+  top: 15px;
+  left: 16px; }
 
 .spoler__title {
+  display: block;
   padding-left: 60px;
   padding-top: 4%;
   height: 60px;
@@ -379,12 +382,21 @@ body {
   font-weight: 400;
   text-transform: uppercase;
   color: #333333;
-  border-bottom: 1px solid #e5e5e5; }
+  border-bottom: 1px solid #e5e5e5;
+  cursor: pointer;
+  transition: background 1.2s ease-out; }
 
-.spoiler--icon {
+.spoler__title:hover {
+  background-color: #c5c5c5; }
+
+.spoler__input {
   position: absolute;
-  top: 15px;
-  left: 16px; }
+  width: 0;
+  hight: 0;
+  appearance: none; }
+
+.spoler__input:checked + .spoiler__text {
+  display: block; }
 
 .spoiler__text {
   display: none;
