@@ -3,24 +3,13 @@
 .header {
   position: relative;
   width: 100%;
-  height: 117vh;
+  height: 120vh;
   background: url(./../img/header_bg1.jpg) center no-repeat;
   background-size: cover;
-  // &:after {
-  //   content: "";
-  //   display: block;
-  //   width: 100%;
-  //   height: 100%;
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   background: transparent;
-  //   background-image: linear-gradient(to top, #fce38a, #f38181);
-  //   opacity: 0.8;
-  // }
 }
 // Start Logo and Nav
 .heder__top {
+  position: absolute;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -82,7 +71,7 @@
   width: 100%;
   max-width: 850px;
   margin: 0 auto;
-  padding-top: 134px;
+  padding-top: 100px;
   text-align: center;
   color: #ffffff;
 }
@@ -136,7 +125,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 155px;
+  margin-top: 85px;
 }
 .slider__item {
   position: relative;
