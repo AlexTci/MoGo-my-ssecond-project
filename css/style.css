@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(reset.css);
 @import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&display=swap");
 body {
@@ -490,3 +491,17 @@ body {
     width: 60px;
     height: 3px;
     background-color: #f38181; }
+
+/* Основные стили */
+/* Слайдер */
+.slick-slider {
+  /* min-width: 0; */ }
+
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden; }
+
+/* Лента слайдов */
+.slick-track {
+  display: flex;
+  align-items: flex-start; }
