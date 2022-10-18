@@ -3,6 +3,7 @@
 }
 .services__content {
   display: flex;
+  // column-gap: 15px;
   padding-top: 47px;
   padding-bottom: 51px;
 }
@@ -15,10 +16,11 @@
 .services__icon {
   position: absolute;
   top: 0;
-  left: 28px;
+  left: 20px;
   z-index: 1;
 }
 .services__title {
+  padding-bottom: 18px;
   font-family: Montserrat;
   font-size: 14px;
   line-height: 1.2;
@@ -30,6 +32,6 @@
 .services__line {
   width: 100%;
   height: 1px;
-  margin: 40px 0;
+  margin: 45px 0;
   background-color: #e5e5e5;
 }
