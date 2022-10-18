@@ -444,3 +444,49 @@ body {
   font-style: italic;
   color: #999999;
   overflow-y: auto; }
+
+.reviews {
+  max-height: 290px;
+  background-color: #f8f8f8;
+  margin-bottom: 100px; }
+
+.reviews__slider {
+  max-width: 1152px; }
+
+.slideritem {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.reviews__img {
+  display: inline-block;
+  margin: 70px 60px 70px 75px; }
+
+.reviews__text {
+  padding-right: 75px;
+  padding-bottom: 23px;
+  font-family: Roboto;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 300;
+  font-style: italic;
+  color: #999999; }
+
+.reviews__name {
+  position: relative;
+  padding-left: 70px;
+  font-family: "Kaushan Script";
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #333333; }
+  .reviews__name::before {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0px;
+    top: 50%;
+    width: 60px;
+    height: 3px;
+    background-color: #f38181; }
