@@ -1,3 +1,5 @@
 $(document).ready(function () {
-  $(".reviews__slider").slick();
+  $(".reviews__slider").slick(
+    
+  );
 });
