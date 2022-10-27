@@ -45,6 +45,20 @@
     opacity: 0.8;
   }
 }
+
+.imges__item a {
+  position: absolute;
+  width: 380px;
+  height: 250px;
+  left: 0;
+  z-index: 5;
+
+}
+
+.imges__item-photo{
+  width: 380px;
+  height: 250px;
+}
 .item__inside {
   width: 200px;
   height: 100px;
@@ -55,10 +69,12 @@
   margin-top: -50px;
   visibility: hidden;
 }
+
 .inside__icon {
   display: block;
   margin: 0 auto;
 }
+
 .inside__text {
   padding-top: 15px;
   text-align: center;
@@ -68,6 +84,7 @@
   font-weight: 700;
   text-transform: uppercase;
   color: #ffffff;
+
 }
 
 //  End section body

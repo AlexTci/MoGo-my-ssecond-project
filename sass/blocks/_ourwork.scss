@@ -74,3 +74,60 @@
   font-style: italic;
   color: #ffffff;
 }
+
+.ourworks__slider {
+  max-width: 1152px;
+  margin-bottom: 50px;
+}
+.ourworks__slideritem {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ourworks__slideritem-img {
+  display: inline-block;
+  margin: 70px 60px 70px 75px;
+  width: 210px;
+  height: 210px;
+  border-radius: 50%;
+}
+.ourworks__overflow {
+  overflow: hidden;
+}
+.ourworks__overflow img {
+  width: auto;
+  height: 200%;
+  margin: -60px 0 0 -240px;
+}
+
+.ourworks__slideritem-text {
+  padding-right: 75px;
+  padding-bottom: 23px;
+  font-family: Roboto;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 300;
+  font-style: italic;
+  color: #999999;
+}
+.ourworks__slideritem-name {
+  position: relative;
+  padding-left: 70px;
+  font-family: "Kaushan Script";
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #333333;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0px;
+    top: 50%;
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+  }
+}
