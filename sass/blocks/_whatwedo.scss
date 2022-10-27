@@ -11,9 +11,6 @@
 }
 .whatwedo__block {
   max-width: 50%;
-  // &:img {
-  //   padding-right: 30px;
-  // }
 }
 
 .spoiler {
@@ -87,7 +84,7 @@
   height: 17px;
   transform: rotate(0deg);
   transition: 0.2s ease-in;
-  background-image: url("/img/icons/arrow.svg");
+  background-image: url("../img/icons/arrow.svg");
 }
 
 .spoiler__input {
