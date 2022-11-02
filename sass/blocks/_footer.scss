@@ -5,11 +5,12 @@
 
 .footer__content {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: stretch;
 }
 
-.footer__left {
+.footer__main {
   width: 100%;
   max-width: 40%;
 }
@@ -181,7 +182,7 @@
 }
 
 .footer__instagram-block a {
-  width: 30%;
+  width: 33.333%;
   border: 1px solid #fff;
   transition: opacity 0.2s ease;
   &:hover {

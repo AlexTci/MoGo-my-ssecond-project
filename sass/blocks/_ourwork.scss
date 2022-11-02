@@ -80,26 +80,22 @@
   margin-bottom: 50px;
 }
 .ourworks__slideritem {
+  min-height: 210px;
+  padding-left: 300px;
   position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+
 }
 .ourworks__slideritem-img {
-  display: inline-block;
-  margin: 70px 60px 70px 75px;
+  display: block;
   width: 210px;
   height: 210px;
   border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 50px;
+  z-index: 1;
 }
-.ourworks__overflow {
-  overflow: hidden;
-}
-.ourworks__overflow img {
-  width: auto;
-  height: 200%;
-  margin: -60px 0 0 -240px;
-}
+
 
 .ourworks__slideritem-text {
   padding-right: 75px;

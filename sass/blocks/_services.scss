@@ -3,15 +3,18 @@
 }
 .services__content {
   display: flex;
-  // column-gap: 15px;
+  flex-wrap: wrap;
   padding-top: 47px;
   padding-bottom: 51px;
 }
 .services__item {
   position: relative;
-  flex: 1 1 0;
-  padding-left: 80px;
-  padding-right: 10px;
+  width: 33%;
+  padding: 0 10px 45px 80px;
+  margin-bottom: 45px;
+  &--border{
+    border-bottom: 1px solid #e5e5e5;
+  }
 }
 .services__icon {
   position: absolute;
@@ -27,11 +30,4 @@
   font-weight: 400;
   text-transform: uppercase;
   color: #333333;
-}
-
-.services__line {
-  width: 100%;
-  height: 1px;
-  margin: 45px 0;
-  background-color: #e5e5e5;
 }
