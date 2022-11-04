@@ -191,7 +191,9 @@
 }
 
 .more-photos {
-  padding-top: 20px;
+  display: inline-block;
+  padding-top: 30px;
+  font-weight: 700;
   color: #333333;
   &:hover {
     color: #95e1d3;

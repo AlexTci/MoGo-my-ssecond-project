@@ -13,28 +13,36 @@
   </head>
   <body>
     <!-- start header -->
-    <header class="header">
+    <!-- Start logo & nav -->
+    <div class="logonav" >
       <div class="container">
-        <!-- Start logo & nav -->
-        <div class="heder__top">
-          <div class="header__logo">
+        <div class="heder__top" id="header__top">
+          <!--header__top--fixed-->
+          <div class="header__logo"  data-scroll="#header">
             <a href="#!">MoGo</a>
           </div>
-          <div class="header__nav">
-            <a class="nav__link active" href="#!">About</a>
-            <a class="nav__link" href="#!">service</a>
-            <a class="nav__link" href="#!">work</a>
-            <a class="nav__link" href="#!">blog</a>
-            <a class="nav__link" href="#!">contact</a>
+          <nav class="header__nav" id="nav">
+            <a class="nav__link" href="#!" data-scroll="#aboutus">About</a>
+            <a class="nav__link" href="#!" data-scroll="#services">Service</a>
+            <a class="nav__link" href="#!" data-scroll="#ourwork">Work</a>
+            <a class="nav__link" href="#!" data-scroll="#ourstories">Blog</a>
+            <a class="nav__link" href="#!" data-scroll="#footer">Contact</a>
             <a class="nav__link" href="#!">
               <i class="fa-solid fa-cart-shopping"></i>
             </a>
             <a class="nav__link" href="#!">
               <i class="fa-solid fa-magnifying-glass"></i>
             </a>
-          </div>
+          </nav>
+          <button class="nav-toggle" type="button" id="nav_toggle" >
+            <span class="nav-toggle__item">Menu</span>
+          </button>
         </div>
-        <!-- End logo & nav -->
+      </div>
+    </div>
+    <!-- End logo & nav -->
+    <header class="header" id="header">
+      <div class="container">
         <!-- Start main block header -->
         <div class="header__text">
           <div class="header__subtitle">Creative Template</div>
@@ -66,7 +74,7 @@
     </header>
     <!-- end header -->
     <!-- Start section About US -->
-    <section class="aboutus">
+    <section class="aboutus" id="aboutus">
       <div class="container">
         <!-- Start hesder section -->
         <div class="section__header">
@@ -179,7 +187,7 @@
     </section>
     <!-- /End section About US -->
     <!-- Start section Amazing Services -->
-    <section class="services">
+    <section class="services" id="services">
       <div class="container">
         <!-- Start hesder section -->
         <div class="section__header">
@@ -753,7 +761,7 @@
     <!-- /END section awards -->
 
     <!-- Start section ourwork -->
-    <section class="ourwork none">
+    <section class="ourwork" id="ourwork">
       <!-- Start hesder section -->
       <div class="section__header">
         <div class="section__header-subtitle">
@@ -986,7 +994,7 @@
     </section>
     <!-- /END section clients -->
     <!-- Start section ourstories -->
-    <section class="ourstories">
+    <section class="ourstories" id="ourstories">
       <div class="container">
         <!-- Start hesder section -->
         <div class="section__header">
@@ -1076,7 +1084,7 @@
     </section>
     <!-- /END section map -->
     <!-- Start Footer -->
-    <footer class="footer">
+    <footer class="footer" id="footer">
       <div class="container">
         <div class="footer__content">
           <div class="footer__main">
@@ -1247,7 +1255,12 @@
     <script src="./js/main.js"></script>
     <script src="./js/lightzoom.js"></script>
     <script>
-      jQuery(".lightzoom").lightzoom({ speed: 400, viewTitle: true });
+      jQuery(".lightzoom").lightzoom({
+        speed: 400,
+        viewTitle: true,
+        isWindowClickClosing: true,
+        isEscClosing: true,
+      });
     </script>
   </body>
 </html>

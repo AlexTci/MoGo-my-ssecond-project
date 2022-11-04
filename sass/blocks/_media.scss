@@ -25,6 +25,9 @@
 
 @media (max-width: 1024px) {
   // start secton header
+  .header__text{
+    padding-top: 175px;
+  }
   .header__title {
     font-size: 80px;
   }
@@ -82,7 +85,41 @@
   }
   .header__nav {
     display: none;
+    text-align: center;
+    width: 100%;
+    // display: block;
+    position: absolute;
+    top: 100%;
+    padding-bottom: 25px;
+    left: 0;
+    background-color: #f28885;
   }
+  .header__nav.active{
+    display: block;
+    
+  }
+  .nav__link {
+    display: block;
+    padding: 25px;
+    &::after{
+      top: 50%;
+      margin-top: 25px;
+      width: 20%;
+      left: 40%;
+    }
+  }
+
+
+  .nav-toggle{
+    display: block;
+  }
+  .heder__top {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.header__logo{
+  margin-left: 20px;
+}
 
   .slider__item {
     font-size: 12px;
@@ -487,7 +524,7 @@
   // START section header
 
   .header__text {
-    padding-top: 50px;
+    padding-top: 200px;
   }
 
   .header__title {
