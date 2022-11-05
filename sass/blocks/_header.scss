@@ -5,7 +5,7 @@
   min-height: 820px;
   width: 100%;
   height: 100vh;
-  background: url(../img/header_bg1.jpg) center no-repeat;
+  // background: url(../img/header_bg1.jpg) center no-repeat;
   background-size: cover;
 }
 // Start Logo and Nav
@@ -118,23 +118,21 @@
   width: 100%;
   height: 3px;
   background-color: #fff;
-  transition: background .2s ease-in;
- 
+  transition: background 0.2s ease-in;
 }
 
 .nav-toggle.active .nav-toggle__item {
   background: none;
 }
 
-.nav-toggle.active .nav-toggle__item::before{
+.nav-toggle.active .nav-toggle__item::before {
   transform-origin: left top;
   transform: rotate(45deg) translateX(-2px);
-  
 }
 
-.nav-toggle.active .nav-toggle__item::after{
+.nav-toggle.active .nav-toggle__item::after {
   transform-origin: left bottom;
-  transform: rotate(-45deg)  translateX(-3px);
+  transform: rotate(-45deg) translateX(-3px);
 }
 
 .nav-toggle__item::before,
@@ -146,7 +144,7 @@
   background-color: #fff;
   left: 0;
   z-index: 1;
-  transition: transform .2s ease-in;
+  transition: transform 0.2s ease-in;
 }
 
 .nav-toggle__item::before {
@@ -163,7 +161,7 @@
   width: 100%;
   max-width: 850px;
   margin: 0 auto;
-  padding-top: 150px;
+  padding-top: 100px;
   text-align: center;
   color: #ffffff;
 }
@@ -228,7 +226,7 @@
 }
 .slider__item {
   position: relative;
-  padding: 20px 0;
+  // padding: 20px 0;
   width: 22%;
   font-family: Montserrat;
   font-size: 18px;
@@ -237,7 +235,7 @@
   text-transform: uppercase;
   color: #ffffff;
   opacity: 0.7;
-  border-top: 3px solid #ffffff;
+  // border-top: 3px solid #ffffff;
 
   b {
     font-size: 24px;
@@ -249,16 +247,96 @@
 .slider__item.active {
   opacity: 1;
 
-  &::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: -3px;
-    left: 0;
-    width: 35%;
-    height: 3px;
-    background-color: #f38181;
-    z-index: 2;
-  }
+  // &::before {
+  //   content: "";
+  //   display: block;
+  //   position: absolute;
+  //   top: -3px;
+  //   left: 0;
+  //   width: 35%;
+  //   height: 3px;
+  //   background-color: #f38181;
+  //   z-index: 2;
+  // }
 }
 // Start Slider Header
+
+.swiper {
+  width: 100%;
+  height: 100vh;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+//    Пагинация
+.swiper-pagination {
+  bottom: 25px;
+}
+//    Буллеты
+.swiper-pagination-bullet {
+  position: relative;
+  width: 156px;
+  height: auto;
+  text-align: left;
+  opacity: 1;
+  margin-right: 20px;
+  background-color: transparent;
+  i {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    width: 80%;
+    height: 3px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    //progress bar
+  }
+  b {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    width: 0%;
+    height: 3px;
+    background-color: #f38181;
+    border-radius: 20px;
+    //progress bar
+  }
+}
+.swiper-pagination-bullet-active {
+  background-color: transparent;
+  b {
+    animation-name: countingBar;
+    animation-duration: 3s; //autopaly
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+  }
+}
+
+@keyframes countingBar {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 80%;
+  }
+}
+

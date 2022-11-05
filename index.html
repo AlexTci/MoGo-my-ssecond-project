@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
     <script
       src="https://kit.fontawesome.com/53c0836e62.js"
       crossorigin="anonymous"
@@ -12,13 +13,12 @@
     <title>MoGo</title>
   </head>
   <body>
-   
     <!-- Start logo & nav -->
-    <div class="logonav" >
+    <div class="logonav">
       <div class="container">
         <div class="heder__top" id="header__top">
           <!--header__top--fixed-->
-          <div class="header__logo"  data-scroll="#header">
+          <div class="header__logo" data-scroll="#header">
             <a href="#!">MoGo</a>
           </div>
           <nav class="header__nav" id="nav">
@@ -34,7 +34,7 @@
               <i class="fa-solid fa-magnifying-glass"></i>
             </a>
           </nav>
-          <button class="nav-toggle" type="button" id="nav_toggle" >
+          <button class="nav-toggle" type="button" id="nav_toggle">
             <span class="nav-toggle__item">Menu</span>
           </button>
         </div>
@@ -42,37 +42,107 @@
     </div>
     <!-- End logo & nav -->
 
-     <!-- start header -->
+    <!-- start header -->
     <header class="header" id="header">
-      <div class="container">
-        <!-- Start main block header -->
-        <div class="header__text">
+      <!-- Start main block header -->
+      <!-- <div class="header__text">
           <div class="header__subtitle">Creative Template</div>
           <div class="header__title">
             <h1>Welcome to MoGo</h1>
           </div>
           <a href="#!" class="button">learn more</a>
-        </div>
-        <!-- End main block header -->
-        <!-- Start slider header -->
-        <div class="header__slider-container">
-          <div class="header__slider">
-            <div class="slider__item active">
-              <b>01</b> <span class="slider__item-text">Intro</span>
-            </div>
-            <div class="slider__item">
-              <b>02</b> <span class="slider__item-text">Work</span>
-            </div>
-            <div class="slider__item">
-              <b>03</b> <span class="slider__item-text">About</span>
-            </div>
-            <div class="slider__item">
-              <b>04</b> <span class="slider__item-text">Contacts</span>
+        </div> -->
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div
+            class="swiper-slide swiper-lazy"
+            data-background="./img/header_bg1.jpg"
+          >
+            <!-- Start main block header -->
+            <div class="container">
+              <div class="header__text">
+                <div class="header__subtitle">Creative Template</div>
+                <div class="header__title">
+                  <h1>Welcome to MoGo</h1>
+                </div>
+                <a href="#!" class="button">learn more</a>
+              </div>
+              <!-- End main block header -->
             </div>
           </div>
+          <div
+            class="swiper-slide swiper-lazy"
+            data-background="./img/header_bg2.jpg"
+          >
+            <!-- Start main block header -->
+            <div class="container">
+              <div class="header__text">
+                <div class="header__subtitle">Creative Template</div>
+                <div class="header__title">
+                  <h1>Welcome to MoGo</h1>
+                </div>
+                <a href="#!" class="button">learn more</a>
+              </div>
+            </div>
+            <!-- End main block header -->
+          </div>
+          <div
+            class="swiper-slide swiper-lazy"
+            data-background="./img/header_bg3.jpg"
+          >
+            <!-- Start main block header -->
+            <div class="container">
+              <div class="header__text">
+                <div class="header__subtitle">Creative Template</div>
+                <div class="header__title">
+                  <h1>Welcome to MoGo</h1>
+                </div>
+                <a href="#!" class="button">learn more</a>
+              </div>
+            </div>
+            <!-- End main block header -->
+          </div>
+          <div
+            class="swiper-slide swiper-lazy"
+            data-background="./img/header_bg4.jpg"
+          >
+            <!-- Start main block header -->
+            <div class="container">
+              <div class="header__text">
+                <div class="header__subtitle">Creative Template</div>
+                <div class="header__title">
+                  <h1>Welcome to MoGo</h1>
+                </div>
+                <a href="#!" class="button">learn more</a>
+              </div>
+            </div>
+            <!-- End main block header -->
+          </div>
         </div>
-        <!-- Start slider header -->
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
       </div>
+
+      <!-- End main block header -->
+      <!-- Start slider header -->
+      <div class="header__slider-container">
+        <div class="header__slider">
+          <div class="slider__item active">
+            <b>01</b> <span class="slider__item-text">Intro</span>
+          </div>
+          <div class="slider__item">
+            <b>02</b> <span class="slider__item-text">Work</span>
+          </div>
+          <div class="slider__item">
+            <b>03</b> <span class="slider__item-text">About</span>
+          </div>
+          <div class="slider__item">
+            <b>04</b> <span class="slider__item-text">Contacts</span>
+          </div>
+        </div>
+      </div>
+      <!-- Start slider header -->
     </header>
     <!-- end header -->
     <!-- Start section About US -->
@@ -1264,5 +1334,7 @@
         isEscClosing: true,
       });
     </script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/swip.js"></script>
   </body>
 </html>
