@@ -46,23 +46,20 @@ $(document).ready(function () {
         blockOffset = $(blockId).offset().top;
 
     $("#nav a").removeClass("active");
+    $("#nav").removeClass("active");
+    $("#nav_toggle").removeClass("active");
+    document.body.classList.remove('lock');
     $this.addClass("active");
 
     $("html, body").animate({
         scrollTop:  blockOffset
-    }, 1000);
+    }, 2000);
 });
-
-
     /* Menu nav toggle */
     $("#nav_toggle").on("click", function(event) {
       event.preventDefault();
-
+      document.body.classList.toggle('lock');
       $(this).toggleClass("active");
       $("#nav").toggleClass("active");
   });
-
-
-
-
 });
